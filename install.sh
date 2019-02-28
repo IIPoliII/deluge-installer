@@ -2,7 +2,7 @@
 
 apt-get update
 apt-get -y install apache2
-adduser --disabled-password --gecos "" deluge
+adduser --disabled-password --system --home /var/www/download --gecos "Deluge Server" --group deluge
 touch /var/log/deluged.log
 touch /var/log/deluge-web.log
 chown deluge:deluge /var/log/deluge*
