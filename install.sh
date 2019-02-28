@@ -9,6 +9,8 @@ chown deluge:deluge /var/log/deluge*
 apt-get update
 apt-get -y install deluged
 apt-get -y install deluge-webui
+apt-get -y install deluge-console
+
 wget --output-document="/etc/default/deluge-daemon" https://raw.githubusercontent.com/iipoliii/deluge-installer/master/etc/default/deluge-daemon
 wget --output-document="/etc/init.d/deluge-daemon" https://raw.githubusercontent.com/iipoliii/deluge-installer/master/etc/init.d/deluge-daemon
 chmod a+x /etc/init.d/deluge-daemon
